@@ -71,6 +71,6 @@ app.use("/ph/barangays", (req, res) => {
 })
 
 
-app.listen(process.env.PORT, () => {
+app.listen((process.env.PORT), process.env.ADDR, () => {
 	console.log("Server is running on port 3000");
 })
