@@ -19,6 +19,6 @@ app.use("/api/v1/ph/citymuns", controller.CITYMUNS)
 app.use("/api/v1/ph/barangays", controller.BARANGAYS)
 
 
-app.listen((process.env.PORT | 3000), process.env.ADDR | "0.0.0.0", () => {
-	console.log("Server is running on " + (process.env.ADDR || "0.0.0.0") + ":" + (process.env.PORT | 3000))
+app.listen((process.env.PORT), process.env.ADDR, () => {
+	console.log("Server is running on " + process.env.PORT)
 })
