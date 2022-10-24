@@ -1,24 +1,58 @@
 # ph-address-data
-a data API for Philippines Addresses such as Regions,Provinces, CityMunicipality, and Barangay
+Data API for Philippines Addresses such as Regions,Provinces, CityMunicipality, and Barangay
+
+
+![image]("../images/banner.png")
+
 
 url: https://ph-address.onrender.com
 
-- /ph/regions
+- _**/ph/regions**_
 
-  data for regions of the philippines
+  ### api route to get regions of the philippines
 
-- /ph/provinces
-
-  data for provinces  of the philippines
-
-- /ph/citymun 
-
-  data for cities and municipalities of the philippines
+  PARAMETERS
+    - empty = get all regions data
+    - regCode = get region data filter by spefic region code
 
 
-- /ph/barangays
 
-data for barangays  of the philippines
+- _**/ph/provinces**_
+
+  ### api route to get  provinces of the philippines
+
+<p style="color: blue">
+
+  PARAMETERS
+    - empty = get all provinces data
+    - regCode = filter by spefic region and its provinces
+    - provCode = get province data filter by specific province code
+
+</p>
+
+- _**/ph/citymuns**_ 
+  
+  ### api route to get cities and municipalities of the philippines
+
+  PARAMETERS
+    - empty = get all citymun data
+    - regCode = get get cities/municipalities data filter by spefic region code
+    - provCode = get get cities/municipalities data filter by spefic provinces code
+    - regCode && provCode = get cities/municipalities data filter by spefic region and provinces code
+
+
+
+- _**/ph/barangays**_
+  
+  ### api route to get  barangays  of the philippines
+
+  PARAMETERS
+    - default = get all barangays data
+    - regCode = get get barangays data filter by spefic region code
+    - provCode = get get barangays data filter by spefic provinces code
+    - regCode && provCode = get barangays data filter by spefic region and provinces code
+
+    
 
 
 

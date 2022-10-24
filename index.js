@@ -11,7 +11,7 @@ app.use(cors());
 app.get('/', controller.HOME);
 app.use("/api/v1/ph/regions", controller.REGIONS)
 app.use("/api/v1/ph/provinces", controller.PROVINCES)
-app.use("/api/v1/ph/citymun", controller.CITYMUNS)
+app.use("/api/v1/ph/citymuns", controller.CITYMUNS)
 app.use("/api/v1/ph/barangays", controller.BARANGAYS)
 
 

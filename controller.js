@@ -29,6 +29,15 @@ const CITYMUNS = (req, res) => {
 		console.log(req.query.regCode, " : ", req.query.provCode);
 		return res.json(require("./json/refcitymun.json")["RECORDS"].filter((item) => item.regDesc == req.query.regCode && item.provCode == req.query.provCode));
 	}
+	if (req.query.regCode) {
+		console.log(req.query.regCode);
+		return res.json(require("./json/refcitymun.json")["RECORDS"].filter((item) => item.regCode == req.query.regCode));
+	} else if (req.query.provCode) {
+		console.log(req.query.provCode);
+		return res.json(require("./json/refcitymun.json")["RECORDS"].filter((item) => item.provCode == req.query.provCode));
+	} else {
+		return res.json(require("./json/refcitymun.json")["RECORDS"]);
+	}
 }
 // route controller for barangays
 const BARANGAYS = (req, res) => {
