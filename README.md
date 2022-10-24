@@ -1,8 +1,9 @@
+
+
+![image](images/banner.png)
+
 # ph-address-data
 Data API for Philippines Addresses such as Regions,Provinces, CityMunicipality, and Barangay
-
-
-![image]("../images/banner.png")
 
 
 url: https://ph-address.onrender.com
