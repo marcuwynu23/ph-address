@@ -5,13 +5,13 @@
 # ph-address-data
 Data API of Regions,Provinces, CityMunicipalities, and Barangay of the Philippines
 
-url: https://ph-address.onrender.com
+url: https://phaddress.onrender.com
 
 - _**api/v1/ph/regions**_
 
   ### Route to get regions of the philippines
 
-  PARAMETERS
+  QUERY PARAMETERS
     - empty = get all regions data
     - regCode = get region data filter by spefic region code
 
@@ -21,7 +21,7 @@ url: https://ph-address.onrender.com
 
   ### Route to get  provinces of the philippines
 
-  PARAMETERS
+  QUERY PARAMETERS
     - empty = get all provinces data
     - regCode = filter by spefic region and its provinces
     - provCode = get province data filter by specific province code
@@ -31,7 +31,7 @@ url: https://ph-address.onrender.com
   
   ### Route to get cities and municipalities of the philippines
 
-  PARAMETERS
+  QUERY PARAMETERS
     - empty = get all citymun data
     - regCode = get get cities/municipalities data filter by spefic region code
     - provCode = get get cities/municipalities data filter by spefic provinces code
