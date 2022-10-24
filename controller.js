@@ -1,5 +1,5 @@
 const HOME = (req, res) => {
-	return res.send('Hello World!');
+	return res.render('index.html', {});
 }
 
 // route controller for regions

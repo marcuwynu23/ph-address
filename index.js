@@ -1,13 +1,22 @@
 require("dotenv").config()
+const path = require("path")
 const express = require('express')
 const cors = require('cors')
+const morgan = require("morgan")
+const nunjucks = require('nunjucks')
+
 
 const controller = require('./controller')
 
-const morgan = require("morgan")
+
 const app = express()
 
-
+nunjucks.configure(path.resolve(__dirname, 'view'), {
+	express: app,
+	autoscape: true,
+	noCache: false
+})
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(morgan("combined"))
 app.use(cors())
 
@@ -22,3 +31,4 @@ app.use("/api/v1/ph/barangays", controller.BARANGAYS)
 app.listen(process.env.PORT, process.env.ADDR, () => {
 	console.log("Server is running on " + process.env.ADDR + ":" + process.env.PORT)
 })
+
