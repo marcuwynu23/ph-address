@@ -2,12 +2,12 @@
 Data API for Philippines Addresses such as Regions,Provinces, CityMunicipality, and Barangay
 
 
-![image]("../images/banner.png")
+![image]("./images/banner.png")
 
 
 url: https://ph-address.onrender.com
 
-- _**/ph/regions**_
+- _**api/v1/ph/regions**_
 
   ### api route to get regions of the philippines
 
@@ -17,7 +17,7 @@ url: https://ph-address.onrender.com
 
 
 
-- _**/ph/provinces**_
+- _**api/v1/ph/provinces**_
 
   ### api route to get  provinces of the philippines
 
@@ -30,7 +30,7 @@ url: https://ph-address.onrender.com
 
 </p>
 
-- _**/ph/citymuns**_ 
+- _**api/v1/ph/citymuns**_ 
   
   ### api route to get cities and municipalities of the philippines
 
@@ -42,7 +42,7 @@ url: https://ph-address.onrender.com
 
 
 
-- _**/ph/barangays**_
+- _**api/v1/ph/barangays**_
   
   ### api route to get  barangays  of the philippines
 
