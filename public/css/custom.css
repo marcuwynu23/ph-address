@@ -1,17 +1,9 @@
-header {
-    height: 100vh;
+* {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
 }
 
-header {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    height: 100%;
-}
 
-.navbar,
-footer {
-    background-color: rgb(72, 72, 72);
-}
 
 .features-icons {
     padding-top: 5rem;
@@ -34,10 +26,6 @@ footer {
 }
 
 
-footer {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
 
 @media screen and (max-width: 360px) {
     .showcase-text {
